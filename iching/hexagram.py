@@ -45,21 +45,26 @@ def moving_lines(hexagram):
 
 
 def draw_hexagram(hexagrams):
-    hexagram = generate_hexagram()
-    hexagram_binary = hex_to_binary(hexagram)
-
+    hexagram_lines = generate_hexagram()
+    hexagram_binary = hex_to_binary(hexagram_lines)
+    
     for h in hexagrams.values():
         if h['binary'].replace(" ", "").strip() == hexagram_binary.replace(" ", "").strip():
-            return h
+            return h, hexagram_lines
 
     raise ValueError(f"No match found for binary: {hexagram_binary}")
 
-def format_hexagram(hexagram):
+def format_hexagram(hexagram, lines):
+    moving = moving_lines(lines)
+    if not moving:
+        moving = "None"
+    else:
+        moving = ', '.join(map(str, moving))
     return (
         f"Hexagram Number {hexagram['hex']}: {hexagram['english']} {hexagram['hex_font']}\n\n"
+        f"Moving Lines: {moving}\n\n"
         f"Hexagram Binary: {hexagram['binary']}\n"
         f"Image Description: {hexagram.get('wilhelm_image', {}).get('text', 'No image description available')}\n\n"
         f"Symbolic Interpretation: {hexagram['wilhelm_symbolic']}\n\n"
         f"Thanks you for using Terminal I Ching! \n"
-
     )

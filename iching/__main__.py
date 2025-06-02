@@ -3,13 +3,14 @@
 from .hexagram import load_hexagrams, draw_hexagram, format_hexagram
 
 def main():
-    print("🎴 Terminal I Ching")
+    print("🎴 Terminal I Ching \n")
     question = input("Enter your question (or press Enter to skip): ")
 
     try:
         hexagrams = load_hexagrams()
-        hexagram = draw_hexagram(hexagrams)
-        formatted = format_hexagram(hexagram)
+        hexagram, lines = draw_hexagram(hexagrams)
+        formatted = format_hexagram(hexagram, lines)
+
 
         if question:
             print(f'\nIn reply to your question "{question}", you have drawn:\n')
