@@ -1,3 +1,13 @@
-venv/*
+# Ignore virtual environment
+venv/
 
+# Ignore compiled Python files and cache
+__pycache__/
+*.py[cod]
+
+# Ignore local notes/planning files
 scope-planning.txt
+
+# Ignore raw and conversion files
+iching/assets/original-raw/
+iching/assets/tools/
