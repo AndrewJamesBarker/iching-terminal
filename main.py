@@ -23,5 +23,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    print("Thank you for using Terminal I Ching!")
+    print("Thank you for using Terminal I Ching! \n")
     # input("Press [Enter] to exit...")
