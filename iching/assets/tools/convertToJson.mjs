@@ -1,4 +1,4 @@
-// convertToJson.mjs for use in a node environment, easiest way to make  valid JSON from JS object
+// convertToJson.mjs for use in a node environment, easiest way to make valid JSON from JS object
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
