@@ -2,7 +2,7 @@ from iching import load_hexagrams, draw_hexagram, format_hexagram
 def main():
 
     print("Welcome to Terminal I Ching!")
-    input("Press [Enter] to draw a hexagram...")
+    question = input("Enter your question (or press Enter to skip): ")
     # Load hexagrams from the file
     try:
         hexagrams = load_hexagrams()
@@ -19,7 +19,7 @@ def main():
     formatted_hexagram = format_hexagram(hexagram)
 
     # Print the formatted hexagram
-    print(f' \n{formatted_hexagram}')
+    print(f'In reply to your question "{question}", you have drawn the following Hexagram: \n{formatted_hexagram}')
 
 if __name__ == "__main__":
     main()
