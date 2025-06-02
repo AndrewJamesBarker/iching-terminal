@@ -3,6 +3,7 @@ venv/
 
 # Ignore compiled Python files and cache
 __pycache__/
+__pycache__/*
 *.py[cod]
 
 # Ignore local notes/planning files
