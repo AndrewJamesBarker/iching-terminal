@@ -56,8 +56,8 @@ def draw_hexagram(hexagrams):
 
 def format_hexagram(hexagram):
     return (
-        f"Hexagram Binary: {hexagram['binary']}\n"
         f"Hexagram Number {hexagram['hex']}: {hexagram['english']} {hexagram['hex_font']}\n\n"
+        f"Hexagram Binary: {hexagram['binary']}\n"
         f"Image Description: {hexagram.get('wilhelm_image', {}).get('text', 'No image description available')}\n\n"
         f"Symbolic Interpretation: {hexagram['wilhelm_symbolic']}\n\n"
         f"Thanks you for using Terminal I Ching! \n"
