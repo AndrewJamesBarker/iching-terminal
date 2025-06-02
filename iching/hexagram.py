@@ -20,6 +20,7 @@ def draw_hexagram(hexagrams):
 
 def format_hexagram(hexagram):
     return (
-        f"Hexagram {hexagram['hex']}: {hexagram['english']}\n"
-        f"Image Description: {hexagram.get('wilhelm_image', {}).get('text', 'No image description available')}\n"
+        f"Hexagram {hexagram['hex']}: {hexagram['english']} {hexagram['hex_font']}\n\n"
+        f"Image Description: {hexagram.get('wilhelm_image', {}).get('text', 'No image description available')}\n\n"
+        f"Symbolic Interpretation: {hexagram['wilhelm_symbolic']}\n"
     )

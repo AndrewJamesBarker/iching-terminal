@@ -19,7 +19,7 @@ def main():
     formatted_hexagram = format_hexagram(hexagram)
 
     # Print the formatted hexagram
-    print(f'In reply to your question "{question}", you have drawn the following Hexagram: \n{formatted_hexagram}')
+    print(f'In reply to your question "{question}", you have drawn the following Hexagram: \n\n{formatted_hexagram}')
 
 if __name__ == "__main__":
     main()
