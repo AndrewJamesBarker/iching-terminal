@@ -66,5 +66,5 @@ def format_hexagram(hexagram, lines):
         f"Hexagram Binary: {hexagram['binary']}\n"
         f"Image Description: {hexagram.get('wilhelm_image', {}).get('text', 'No image description available')}\n\n"
         f"Symbolic Interpretation: {hexagram['wilhelm_symbolic']}\n\n"
-        f"Thanks you for using Terminal I Ching! \n"
+        f"Thank you for using Terminal I Ching! \n"
     )
