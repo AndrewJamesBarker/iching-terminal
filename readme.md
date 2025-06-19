@@ -13,10 +13,11 @@ A command-line tool to consult the I Ching (Book of Changes).
    cd iching-terminal
    ```
 
-2. **Run the program**
+2. **Run the program from /iching-terminal dir**
 
    ```bash
-   python main.py
+   python3 -m iching
+
    ```
 
 When you ask a question, a hexagram is formed by simulating three coin tosses for each of the six lines. Each toss yields either 2 (tails) or 3 (heads), and the sum of the three values determines the line: an odd total creates a solid yang line (⚊), while an even total creates a broken yin line (⚋).
